@@ -1,11 +1,14 @@
 package com.gsbusiness.livecricketscoreprediction.Activities.Criclytics;
 
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.DisplayMetrics;
 import android.view.Display;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import androidx.activity.result.ActivityResult;
@@ -46,10 +49,12 @@ public class CriclyticsActivity extends AppCompatActivity {
     LinearLayout ll_live;
     LinearLayout ll_prediction;
     LinearLayout ll_upcoming;
+    ImageButton fabs;
     String matchId;
     String matchType;
     ProgressBar progressBar;
     Runnable refresh;
+
     ActivityResultLauncher<Intent> resultLauncher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), new ActivityResultCallback<ActivityResult>() {
 
         public void onActivityResult(ActivityResult activityResult) {
@@ -114,9 +119,35 @@ public class CriclyticsActivity extends AppCompatActivity {
             Glob.noInternetDialogShowActivity(this);
         }
         initView();
+
     }
 
     private void initView() {
+
+
+        this.fabs = findViewById(R.id.fab);
+
+
+        fabs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                String url = "https://api.whatsapp.com/send?phone=918766694835";
+
+                try{
+                    PackageManager pm = getApplicationContext().getPackageManager();
+                    pm.getPackageInfo("com.whatsapp", PackageManager.GET_ACTIVITIES);
+                    Intent i = new Intent(Intent.ACTION_VIEW);
+                    i.setData(Uri.parse(url));
+                    startActivity(i);
+
+                } catch (PackageManager.NameNotFoundException e) {
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
+                }
+
+            }
+        });
+
         findViewById(R.id.img_back).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -225,7 +256,7 @@ public class CriclyticsActivity extends AppCompatActivity {
         this.handler.post(r1);
     }
 
-    
+
   
     private void getMatchDetail(final ArrayList<FeaturematchQuery.Featurematch> arrayList) {
 
