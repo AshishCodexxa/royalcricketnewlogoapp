@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#9c010d</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="progress">#26000000</color>
+    <color name="progress_dark_blue">#070f24</color>
+    <color name="progress_dark_red">#e7040f</color>
+    <color name="progress_light_blue">#838690</color>
+    <color name="progress_light_red">#f38287</color>
+    <color name="color_white_back">#ffecf0f3</color>
+    <color name="exblack">#33716050</color>
+    <color name="color_text_secondary">#ff9a9a9a</color>
+    <color name="trans">#10000000</color>
+
+    <color name="Colorbackground">#ff252525</color>
+    <color name="blackGray">#121212</color>
+    <color name="blue">#0074cc</color>
+    <color name="blueGray">#7393b3</color>
+    <color name="blue_azure">#4863a0</color>
+    <color name="blue_neon">#1589ff</color>
+    <color name="border">#5c5c5c</color>
+
+    <color name="test_color">#000</color>
+    <color name="textBlackLight">#999999</color>
+    <color name="textFmBold">#bf000000</color>
+    <color name="textFmLight">#59000000</color>
+    <color name="textFmNormal">#80000000</color>
+    <color name="textRedDark">#a70e13</color>
+    <color name="textWhite">#ffffffff</color>
+    <color name="text_Fantasy">#999999</color>
+
+    <color name="purple_">#8675a9</color>
+    <color name="red">#ff0000</color>
+    <color name="redLight">#db5f52</color>
+
+
+    <color name="orange">#ff4500</color>
+    <color name="orangeLight">#d9caa1</color>
+    <color name="pink_">#b52b65</color>
+    <color name="primaryDarkBlue">#172132</color>
+    <color name="primaryRed">#cf2f38</color>
+    <color name="gray_ad_border">#c5c5c5</color>
+
+    <color name="cyan_">#3b6978</color>
+    <color name="darkGrayishMagenta_">#3c2c3e</color>
+    <color name="darkGreen_">#16817a</color>
+    <color name="darkMagenta_">#6a2c70</color>
+    <color name="darkRed_">#900d0d</color>
+
+    <color name="colorSix">#c665ec</color>
+    <color name="colorTabText">#8ed8df</color>
+    <color name="colorTextBlack">#000000</color>
+    <color name="colorTextGray">#757575</color>
+    <color name="colorWhiteLightBlue">#f0ffff</color>
+    <color name="colorWicket">#dc353e</color>
+    <color name="colorYellow">#f4c430</color>
+    <color name="color_ad_title">#000</color>
+    <color name="transperent_0">#00000000</color>
+    <color name="transperent_10">#1a000000</color>
+    <color name="transperent_100">#ff000000</color>
+    <color name="transperent_15">#26000000</color>
+    <color name="transperent_20">#33000000</color>
+    <color name="transperent_25">#40000000</color>
+    <color name="transperent_30">#4d000000</color>
+    <color name="transperent_35">#59000000</color>
+    <color name="transperent_40">#66000000</color>
+    <color name="transperent_45">#73000000</color>
+    <color name="transperent_5">#0d000000</color>
+    <color name="transperent_50">#80000000</color>
+    <color name="transperent_55">#8c000000</color>
+    <color name="transperent_60">#99000000</color>
+    <color name="transperent_65">#a6000000</color>
+    <color name="transperent_70">#b3000000</color>
+    <color name="transperent_75">#bf000000</color>
+    <color name="transperent_80">#cc000000</color>
+    <color name="transperent_85">#d9000000</color>
+    <color name="transperent_90">#e6000000</color>
+    <color name="transperent_95">#f2000000</color>
+    <color name="colorBackSeries">#f5f5f5</color>
+    <color name="colorBackTop">#39235c</color>
+    <color name="colorBackTop2">#1473ad</color>
+    <color name="colorBackTopRed">#d41c27</color>
+    <color name="colorBlue">#2f3847</color>
+    <color name="colorDarkMode">#bdbdbd</color>
+    <color name="colorDarkModeSecondary">#1a000000</color>
+    <color name="colorDivider">#bdbdbd</color>
+    <color name="colorFour">#28a6c6</color>
+    <color name="colorGreenIS">#43b88e</color>
+    <color name="colorGreenStatus">#27ae60</color>
+    <color name="colorGreenWS">#a4c0c6</color>
+    <color name="colorMainBackGround">#eeeeee</color>
+    <color name="colorMatchStatus">#ffefd5</color>
+    <color name="background_gray">#e8e9ef</color>
+    <color name="colorPrimaryVariant">#00b48a</color>
+    <color name="colorPrimaryn">#ffbb86fc</color>
+    <color name="colorSecondary">#172132</color>
+    <color name="colorSecondaryBackGround">#f1f1f3</color>
+    <color name="colorSecondaryVariant">#d5d5c0</color>
+    <color name="imageBackground">#727680</color>
+    <color name="tabSelectedTextColor">#c73126</color>
+    <color name="colorOrangeDS">#ff8474</color>
+    <color name="colorPrimary">#00b48a</color>
+    <color name="colorPrimaryLight">#4cd5a4</color>
+    <color name="green">#00a36c</color>
+    <color name="green_">#799351</color>
+
+</resources>

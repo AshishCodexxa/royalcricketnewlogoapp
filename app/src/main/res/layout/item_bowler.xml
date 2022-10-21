@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_item_fm"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/transperent_10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:weightSum="12">
+
+        <TextView
+            android:id="@+id/txt_bowler_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.5"
+            android:maxLines="1"
+            android:text="@string/desh"
+            android:textColor="@color/blue_neon"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_bowler_over"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.55"
+            android:gravity="center"
+            android:text="@string/_0"
+            android:textColor="@color/textFmBold"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_bowler_maiden"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.55"
+            android:gravity="center"
+            android:text="@string/_0"
+            android:textColor="@color/textFmLight"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/txt_bowler_run"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.1"
+            android:gravity="center"
+            android:text="@string/_0"
+            android:textColor="@color/textFmLight"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/txt_bowler_wickets"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.1"
+            android:gravity="center"
+            android:text="@string/_0"
+            android:textColor="@color/textFmLight"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/txt_bowler_eco"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.2"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/_0"
+            android:textColor="@color/textFmLight"
+            android:textSize="11sp" />
+    </LinearLayout>
+</LinearLayout>

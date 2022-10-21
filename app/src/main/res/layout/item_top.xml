@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="180dp">
+
+            <ImageView
+                android:id="@+id/img_player"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/player_dummy" />
+
+            <ImageView
+                android:id="@+id/img_cap"
+                android:layout_width="45dp"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="right|center_vertical|center_horizontal|center|end"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_orange_cap" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="2dp">
+
+        <TextView
+            android:id="@+id/txt_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/textRedDark"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_number_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/textRedDark"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/txt_player"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txt_player_team"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/textBlackLight"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="all">
+        <item
+            android:id="@+id/nav_score"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_schedule"
+            android:icon="@drawable/ic_schedule"
+            android:title="@string/menu_schedules" />
+
+
+        <item
+            android:id="@+id/nav_fantasy"
+            android:icon="@drawable/ic_live_score"
+            android:title="IPL" />
+        <item
+            android:id="@+id/nav_more"
+            android:icon="@drawable/ic_team"
+            android:title="Team" />
+        <item
+            android:id="@+id/news"
+            android:icon="@drawable/gradian_news_bg"
+            android:title="News" />
+
+    </group>
+</menu>

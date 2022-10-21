@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ScrollView android:orientation="vertical" android:id="@+id/scrollView" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_player_match_ups" android:background="@color/white" android:padding="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="@color/colorTextBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Player Match-Ups" android:layout_centerVertical="true" android:textAllCaps="true"/>
+                    <ImageView android:id="@+id/img_info" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/icon_info" android:layout_alignParentEnd="true" app:tint="@color/colorTextGray"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_info" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <View android:background="@drawable/divider" android:layout_width="match_parent" android:layout_height="1dp"/>
+                    <TextView android:textSize="11sp" android:textColor="@color/transperent_50" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="A direct head-to-head comparison between bat and ball, pitting two players selected by you, against each other." android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <View android:background="@drawable/divider" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="5dp"/>
+                <RelativeLayout android:gravity="right|center_vertical|center_horizontal|center|end" android:orientation="horizontal" android:background="@drawable/back_comapre" android:layout_width="match_parent" android:layout_height="190dp">
+                    <ImageView android:id="@+id/img_bat" android:layout_width="22dp" android:layout_height="22dp" android:layout_marginTop="10dp" android:src="@drawable/bat" android:layout_marginStart="10dp" app:tint="@color/white"/>
+                    <ImageView android:id="@+id/img_ball" android:layout_width="22dp" android:layout_height="22dp" android:layout_marginTop="10dp" android:src="@drawable/ball" android:layout_marginEnd="10dp" android:layout_alignParentEnd="true" app:tint="@color/white"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="35dp" android:weightSum="3" android:layout_alignParentBottom="true" android:layout_marginStart="15dp" android:layout_marginEnd="15dp">
+                        <ImageView android:id="@+id/img_player_batter" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/player_dummy" android:layout_weight="0.9"/>
+                        <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1.2"/>
+                        <ImageView android:id="@+id/img_player_bowler" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/player_dummy" android:layout_weight="0.9"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:weightSum="3" android:layout_alignParentBottom="true">
+                        <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="@color/textWhite" android:gravity="center" android:id="@+id/txt_batter" android:background="@color/primaryDarkBlue" android:paddingTop="2dp" android:paddingBottom="2dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Batting" android:maxLines="1" android:layout_weight="1" android:layout_marginEnd="5dp"/>
+                        <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+                        <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="@color/textWhite" android:gravity="center" android:id="@+id/txt_bowler" android:background="@color/primaryDarkBlue" android:paddingTop="2dp" android:paddingBottom="2dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Bowling" android:maxLines="1" android:layout_weight="1" android:layout_marginEnd="5dp"/>
+                    </LinearLayout>
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_states" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="right|center_vertical|center_horizontal|center|end" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="15dp">
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Last 5 Years Data" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <androidx.cardview.widget.CardView android:layout_gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="10dp" app:cardBackgroundColor="@color/white" app:cardCornerRadius="5dp" app:cardMaxElevation="10dp">
+                                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                    <TextView android:textSize="22sp" android:textStyle="bold" android:textColor="@color/progress_dark_red" android:gravity="center" android:id="@+id/txt_balFaced" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="10"/>
+                                    <TextView android:textSize="12sp" android:textColor="@color/colorTextBlack" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="Ball Faced"/>
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+                            <androidx.cardview.widget.CardView android:layout_gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:layout_weight="1" android:layout_marginStart="15dp" android:layout_marginEnd="15dp" app:cardBackgroundColor="@color/white" app:cardCornerRadius="5dp" app:cardMaxElevation="10dp">
+                                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                    <TextView android:textSize="22sp" android:textStyle="bold" android:textColor="@color/progress_dark_red" android:gravity="center" android:id="@+id/txt_dismissals" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="10"/>
+                                    <TextView android:textSize="12sp" android:textColor="@color/colorTextBlack" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="Dismissals"/>
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+                            <androidx.cardview.widget.CardView android:layout_gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="10dp" app:cardBackgroundColor="@color/white" app:cardCornerRadius="5dp" app:cardMaxElevation="10dp">
+                                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                    <TextView android:textSize="22sp" android:textStyle="bold" android:textColor="@color/progress_dark_red" android:gravity="center" android:id="@+id/txt_runs" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="10"/>
+                                    <TextView android:textSize="12sp" android:textColor="@color/colorTextBlack" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="Runs"/>
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="right|center_vertical|center_horizontal|center|end" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+                        <TextView android:textColor="@color/colorTextGray" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Batting S/R" android:layout_weight="1"/>
+                        <TextView android:textStyle="bold" android:textColor="@color/colorTextBlack" android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/txt_battingSR" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Batting S/R" android:layout_weight="1"/>
+                    </LinearLayout>
+                    <View android:background="@drawable/divider" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="15dp" android:layout_marginBottom="15dp"/>
+                    <LinearLayout android:gravity="right|center_vertical|center_horizontal|center|end" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+                        <TextView android:textColor="@color/colorTextGray" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Bowling S/R" android:layout_weight="1"/>
+                        <TextView android:textStyle="bold" android:textColor="@color/colorTextBlack" android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/txt_bowlingSR" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Bowling S/R" android:layout_weight="1"/>
+                    </LinearLayout>
+                    <View android:background="@drawable/divider" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="15dp" android:layout_marginBottom="20dp"/>
+                    <androidx.cardview.widget.CardView android:layout_gravity="center" android:id="@+id/card_otherMatchup" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:layout_marginStart="80dp" android:layout_marginEnd="80dp" app:cardCornerRadius="30dp" app:cardMaxElevation="10dp">
+                        <LinearLayout android:background="@drawable/back_top_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="15sp" android:textStyle="bold" android:textColor="@color/textWhite" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="13dp" android:text="Other Matchups" android:textAllCaps="true"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_player" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_player_batter" android:layout_width="match_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false"/>
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_player_bowler" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false"/>
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:id="@+id/rl_ad_bottom" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/ad_banner" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <ImageView android:id="@+id/ad_icon" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginEnd="5dp" android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_no_data" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10dp" android:layout_centerInParent="true">
+                <ImageView android:layout_width="150dp" android:layout_height="150dp" android:src="@drawable/ic_no_data"/>
+                <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/darkRed_" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="No Data Found."/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ProgressBar android:id="@+id/ProgressBar" android:padding="170dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+</RelativeLayout>

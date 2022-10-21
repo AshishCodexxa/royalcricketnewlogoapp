@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "213276419622",
+    "project_id": "live-cricket-predictions",
+    "storage_bucket": "live-cricket-predictions.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:213276419622:android:d161df2113fe379b9768e7",
+        "android_client_info": {
+          "package_name": "com.gsbusiness.livecricketscoreprediction"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "213276419622-aesl7eft64r1pab1onrss682pe15eu6t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCg5e38KEsfYQn2k8TuYgmvl6FDbsO5LoY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "213276419622-aesl7eft64r1pab1onrss682pe15eu6t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

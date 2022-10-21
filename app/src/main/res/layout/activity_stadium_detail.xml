@@ -1,0 +1,1549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/back_top_toolbar"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/txt_toolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/img_home"
+            android:layout_toEndOf="@+id/img_back"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img_home"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_home"
+            app:tint="@color/white" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_stadium"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_stadium" />
+
+            <LinearLayout
+                android:id="@+id/ll_stadium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_stadium"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="7dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/divider" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="@string/stadium_details"
+                            android:textColor="@color/textFmBold"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/divider" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1.2"
+                                android:text="@string/city"
+                                android:textColor="@color/textFmNormal"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/txt_city"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1.8"
+                                android:text="@string/desh"
+                                android:textColor="@color/textFmBold"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/divider" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1.2"
+                                android:text="@string/capacity"
+                                android:textColor="@color/textFmNormal"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/txt_capacity"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1.8"
+                                android:text="@string/desh"
+                                android:textColor="@color/textFmBold"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/divider" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1.2"
+                                android:text="@string/team_s_homeground"
+                                android:textColor="@color/textFmNormal"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/txt_team_s_homeground"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1.8"
+                                android:text="@string/desh"
+                                android:textColor="@color/textFmBold"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/divider" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1.2"
+                                android:text="@string/player_s_homeground"
+                                android:textColor="@color/textFmNormal"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/txt_player_s_homeground"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1.8"
+                                android:text="@string/desh"
+                                android:textColor="@color/textFmBold"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/divider" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1.2"
+                                android:text="@string/bowling_ends"
+                                android:textColor="@color/textFmNormal"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/txt_bowling_ends"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1.8"
+                                android:maxLines="2"
+                                android:text="@string/desh"
+                                android:textColor="@color/textFmBold"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="7dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/ll_test_main"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:background="@color/white"
+                            android:orientation="horizontal"
+                            android:weightSum="10">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="9"
+                                android:paddingStart="12dp"
+                                android:paddingEnd="12dp"
+                                android:text="@string/test"
+                                android:textColor="@color/textFmBold"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/img_test"
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:padding="2dp"
+                                android:src="@drawable/ic_arrow_down"
+                                app:tint="?attr/colorControlNormal" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_test"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="5dp"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="1.2"
+                                    android:text="@string/_1st_test"
+                                    android:textColor="@color/textFmNormal"
+                                    android:textSize="12sp" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.8"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/txt_firstTestDate"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="2"
+                                        android:paddingTop="2dp"
+                                        android:paddingBottom="2dp"
+                                        android:text="@string/desh"
+                                        android:textColor="@color/textFmBold"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txt_firstTestTeam"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="2"
+                                        android:paddingTop="2dp"
+                                        android:paddingBottom="2dp"
+                                        android:text="@string/desh"
+                                        android:textColor="@color/textFmBold"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txt_firstTestResult"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="2"
+                                        android:paddingTop="2dp"
+                                        android:paddingBottom="2dp"
+                                        android:text="@string/desh"
+                                        android:textColor="@color/textFmBold"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/divider" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="1.2"
+                                    android:text="@string/recent_test"
+                                    android:textColor="@color/textFmNormal"
+                                    android:textSize="12sp" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.8"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/txt_recentTestDate"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="2"
+                                        android:paddingTop="2dp"
+                                        android:paddingBottom="2dp"
+                                        android:text="@string/desh"
+                                        android:textColor="@color/textFmBold"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txt_recentTestTeam"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="2"
+                                        android:paddingTop="2dp"
+                                        android:paddingBottom="2dp"
+                                        android:text="@string/desh"
+                                        android:textColor="@color/textFmBold"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txt_recentTestResult"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="2"
+                                        android:paddingTop="2dp"
+                                        android:paddingBottom="2dp"
+                                        android:text="@string/desh"
+                                        android:textColor="@color/textFmBold"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/divider" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.3"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:gravity="center"
+                                        android:maxLines="2"
+                                        android:text="@string/average_1st_innings_score"
+                                        android:textColor="@color/textFmNormal"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_test_avg"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:gravity="center"
+                                        android:text="@string/_0"
+                                        android:textColor="@color/textFmBold"
+                                        android:textSize="20sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.009"
+                                    android:background="@drawable/divider" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.7"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:gravity="center"
+                                        android:maxLines="2"
+                                        android:text="@string/team_batting_1st_winning"
+                                        android:textColor="@color/textFmNormal"
+                                        android:textSize="12sp" />
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:id="@+id/txt_test_winning"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:layout_margin="10dp"
+                                            android:gravity="center"
+                                            android:text="@string/_00"
+                                            android:textColor="@color/textFmNormal"
+                                            android:textSize="11sp" />
+
+                                        <ProgressBar
+                                            android:id="@+id/progressBar"
+                                            android:layout_width="65dp"
+                                            android:layout_height="65dp"
+                                            android:layout_centerInParent="true"
+                                            android:layout_gravity="center"
+                                            android:layout_marginStart="5dp"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginEnd="5dp"
+                                            android:layout_marginBottom="5dp"
+                                            android:indeterminateOnly="false"
+                                            android:progressDrawable="@drawable/progressbar" />
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/divider" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="1.2"
+                                    android:text="@string/highest_test_score"
+                                    android:textColor="@color/textFmNormal"
+                                    android:textSize="12sp" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.8"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/txt_highTestDate"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="2"
+                                        android:paddingTop="2dp"
+                                        android:paddingBottom="2dp"
+                                        android:text="@string/desh"
+                                        android:textColor="@color/textFmBold"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txt_highTestTeam"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="2"
+                                        android:paddingTop="2dp"
+                                        android:paddingBottom="2dp"
+                                        android:text="@string/desh"
+                                        android:textColor="@color/textFmBold"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txt_highTestResult"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="2"
+                                        android:paddingTop="2dp"
+                                        android:paddingBottom="2dp"
+                                        android:text="@string/desh"
+                                        android:textColor="@color/textFmBold"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/divider" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="1.2"
+                                    android:text="@string/lowest_test_score"
+                                    android:textColor="@color/textFmNormal"
+                                    android:textSize="12sp" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.8"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/txt_lowTestDate"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="2"
+                                        android:paddingTop="2dp"
+                                        android:paddingBottom="2dp"
+                                        android:text="@string/desh"
+                                        android:textColor="@color/textFmBold"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txt_lowTestTeam"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="2"
+                                        android:paddingTop="2dp"
+                                        android:paddingBottom="2dp"
+                                        android:text="@string/desh"
+                                        android:textColor="@color/textFmBold"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txt_lowTestResult"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="2"
+                                        android:paddingTop="2dp"
+                                        android:paddingBottom="2dp"
+                                        android:text="@string/desh"
+                                        android:textColor="@color/textFmBold"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="7dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/ll_odi_main"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:background="@color/white"
+                            android:orientation="horizontal"
+                            android:weightSum="10">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="9"
+                                android:paddingStart="12dp"
+                                android:paddingEnd="12dp"
+                                android:text="@string/odis"
+                                android:textColor="@color/textFmBold"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/img_odi"
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:padding="2dp"
+                                android:src="@drawable/ic_arrow_down"
+                                app:tint="?attr/colorControlNormal" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_odi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="5dp"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="1.2"
+                                    android:text="@string/_1st_odi"
+                                    android:textColor="@color/textFmNormal"
+                                    android:textSize="12sp" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.8"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/txt_firstOdiDate"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="2"
+                                        android:paddingTop="2dp"
+                                        android:paddingBottom="2dp"
+                                        android:text="@string/desh"
+                                        android:textColor="@color/textFmBold"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txt_firstOdiTeam"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="2"
+                                        android:paddingTop="2dp"
+                                        android:paddingBottom="2dp"
+                                        android:text="@string/desh"
+                                        android:textColor="@color/textFmBold"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txt_firstOdiResult"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="2"
+                                        android:paddingTop="2dp"
+                                        android:paddingBottom="2dp"
+                                        android:text="@string/desh"
+                                        android:textColor="@color/textFmBold"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/divider" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="1.2"
+                                    android:text="@string/recent_odi"
+                                    android:textColor="@color/textFmNormal"
+                                    android:textSize="12sp" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.8"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/txt_recentOdiDate"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="2"
+                                        android:paddingTop="2dp"
+                                        android:paddingBottom="2dp"
+                                        android:text="@string/desh"
+                                        android:textColor="@color/textFmBold"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txt_recentOdiTeam"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="2"
+                                        android:paddingTop="2dp"
+                                        android:paddingBottom="2dp"
+                                        android:text="@string/desh"
+                                        android:textColor="@color/textFmBold"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txt_recentOdiResult"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="2"
+                                        android:paddingTop="2dp"
+                                        android:paddingBottom="2dp"
+                                        android:text="@string/desh"
+                                        android:textColor="@color/textFmBold"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/divider" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.3"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:gravity="center"
+                                        android:maxLines="2"
+                                        android:text="@string/average_1st_innings_score_odi"
+                                        android:textColor="@color/textFmNormal"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_Odi_avg"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:gravity="center"
+                                        android:text="@string/_0"
+                                        android:textColor="@color/textFmBold"
+                                        android:textSize="20sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.009"
+                                    android:background="@drawable/divider" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.7"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:gravity="center"
+                                        android:maxLines="2"
+                                        android:text="@string/team_batting_1st_winning_odi"
+                                        android:textColor="@color/textFmNormal"
+                                        android:textSize="12sp" />
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:id="@+id/txt_Odi_winning"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:layout_margin="10dp"
+                                            android:gravity="center"
+                                            android:text="@string/_00"
+                                            android:textColor="@color/textFmNormal"
+                                            android:textSize="11sp" />
+
+                                        <ProgressBar
+                                            android:id="@+id/progressBarOdi"
+                                            android:layout_width="65dp"
+                                            android:layout_height="65dp"
+                                            android:layout_centerInParent="true"
+                                            android:layout_gravity="center"
+                                            android:layout_marginStart="5dp"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginEnd="5dp"
+                                            android:layout_marginBottom="5dp"
+                                            android:indeterminateOnly="false"
+                                            android:progressDrawable="@drawable/progressbar" />
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/divider" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="1.2"
+                                    android:text="@string/highest_odi_score"
+                                    android:textColor="@color/textFmNormal"
+                                    android:textSize="12sp" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.8"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/txt_highOdiDate"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="2"
+                                        android:paddingTop="2dp"
+                                        android:paddingBottom="2dp"
+                                        android:text="@string/desh"
+                                        android:textColor="@color/textFmBold"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txt_highOdiTeam"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="2"
+                                        android:paddingTop="2dp"
+                                        android:paddingBottom="2dp"
+                                        android:text="@string/desh"
+                                        android:textColor="@color/textFmBold"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txt_highOdiResult"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="2"
+                                        android:paddingTop="2dp"
+                                        android:paddingBottom="2dp"
+                                        android:text="@string/desh"
+                                        android:textColor="@color/textFmBold"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/divider" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="1.2"
+                                    android:text="@string/lowest_odi_score"
+                                    android:textColor="@color/textFmNormal"
+                                    android:textSize="12sp" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.8"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/txt_lowOdiDate"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="2"
+                                        android:paddingTop="2dp"
+                                        android:paddingBottom="2dp"
+                                        android:text="@string/desh"
+                                        android:textColor="@color/textFmBold"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txt_lowOdiTeam"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="2"
+                                        android:paddingTop="2dp"
+                                        android:paddingBottom="2dp"
+                                        android:text="@string/desh"
+                                        android:textColor="@color/textFmBold"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txt_lowOdiResult"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="2"
+                                        android:paddingTop="2dp"
+                                        android:paddingBottom="2dp"
+                                        android:text="@string/desh"
+                                        android:textColor="@color/textFmBold"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="7dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/ll_t20_main"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:background="@color/white"
+                            android:orientation="horizontal"
+                            android:weightSum="10">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="9"
+                                android:paddingStart="12dp"
+                                android:paddingEnd="12dp"
+                                android:text="@string/t20s"
+                                android:textColor="@color/textFmBold"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/img_t20"
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:padding="2dp"
+                                android:src="@drawable/ic_arrow_down"
+                                app:tint="?attr/colorControlNormal" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_t20"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="5dp"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="1.2"
+                                    android:text="@string/_1st_t20"
+                                    android:textColor="@color/textFmNormal"
+                                    android:textSize="12sp" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.8"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/txt_firstt20Date"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="2"
+                                        android:paddingTop="2dp"
+                                        android:paddingBottom="2dp"
+                                        android:text="@string/desh"
+                                        android:textColor="@color/textFmBold"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txt_firstt20Team"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="2"
+                                        android:paddingTop="2dp"
+                                        android:paddingBottom="2dp"
+                                        android:text="@string/desh"
+                                        android:textColor="@color/textFmBold"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txt_firstt20Result"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="2"
+                                        android:paddingTop="2dp"
+                                        android:paddingBottom="2dp"
+                                        android:text="@string/desh"
+                                        android:textColor="@color/textFmBold"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/divider" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="1.2"
+                                    android:text="@string/recent_t20"
+                                    android:textColor="@color/textFmNormal"
+                                    android:textSize="12sp" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.8"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/txt_recentt20Date"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="2"
+                                        android:paddingTop="2dp"
+                                        android:paddingBottom="2dp"
+                                        android:text="@string/desh"
+                                        android:textColor="@color/textFmBold"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txt_recentt20Team"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="2"
+                                        android:paddingTop="2dp"
+                                        android:paddingBottom="2dp"
+                                        android:text="@string/desh"
+                                        android:textColor="@color/textFmBold"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txt_recentt20Result"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="2"
+                                        android:paddingTop="2dp"
+                                        android:paddingBottom="2dp"
+                                        android:text="@string/desh"
+                                        android:textColor="@color/textFmBold"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/divider" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.3"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:gravity="center"
+                                        android:maxLines="2"
+                                        android:text="@string/average_1st_innings_score_t20"
+                                        android:textColor="@color/textFmNormal"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_t20_avg"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:gravity="center"
+                                        android:text="@string/_0"
+                                        android:textColor="@color/textFmBold"
+                                        android:textSize="20sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.009"
+                                    android:background="@drawable/divider" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.7"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:gravity="center"
+                                        android:maxLines="2"
+                                        android:text="@string/team_batting_1st_winning_t20"
+                                        android:textColor="@color/textFmNormal"
+                                        android:textSize="12sp" />
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:id="@+id/txt_t20_winning"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerInParent="true"
+                                            android:layout_margin="10dp"
+                                            android:gravity="center"
+                                            android:text="@string/_00"
+                                            android:textColor="@color/textFmNormal"
+                                            android:textSize="11sp" />
+
+                                        <ProgressBar
+                                            android:id="@+id/progressBart20"
+                                            android:layout_width="65dp"
+                                            android:layout_height="65dp"
+                                            android:layout_centerInParent="true"
+                                            android:layout_gravity="center"
+                                            android:layout_marginStart="5dp"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginEnd="5dp"
+                                            android:layout_marginBottom="5dp"
+                                            android:indeterminateOnly="false"
+                                            android:progressDrawable="@drawable/progressbar" />
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/divider" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="1.2"
+                                    android:text="@string/highest_t20_score"
+                                    android:textColor="@color/textFmNormal"
+                                    android:textSize="12sp" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.8"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/txt_hight20Date"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="2"
+                                        android:paddingTop="2dp"
+                                        android:paddingBottom="2dp"
+                                        android:text="@string/desh"
+                                        android:textColor="@color/textFmBold"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txt_hight20Team"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="2"
+                                        android:paddingTop="2dp"
+                                        android:paddingBottom="2dp"
+                                        android:text="@string/desh"
+                                        android:textColor="@color/textFmBold"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txt_hight20Result"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="2"
+                                        android:paddingTop="2dp"
+                                        android:paddingBottom="2dp"
+                                        android:text="@string/desh"
+                                        android:textColor="@color/textFmBold"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/divider" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="1.2"
+                                    android:text="@string/lowest_t20_score"
+                                    android:textColor="@color/textFmNormal"
+                                    android:textSize="12sp" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.8"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/txt_lowt20Date"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="2"
+                                        android:paddingTop="2dp"
+                                        android:paddingBottom="2dp"
+                                        android:text="@string/desh"
+                                        android:textColor="@color/textFmBold"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txt_lowt20Team"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="2"
+                                        android:paddingTop="2dp"
+                                        android:paddingBottom="2dp"
+                                        android:text="@string/desh"
+                                        android:textColor="@color/textFmBold"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/txt_lowt20Result"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="2"
+                                        android:paddingTop="2dp"
+                                        android:paddingBottom="2dp"
+                                        android:text="@string/desh"
+                                        android:textColor="@color/textFmBold"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar_"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_centerInParent="true" />
+
+            <LinearLayout
+                android:id="@+id/ll_no_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/ic_no_data" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:text="No Stadium Data Found."
+                    android:textColor="@color/darkRed_"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <FrameLayout
+        android:id="@+id/adsstatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#dfdfdf"
+        android:minHeight="50dp">
+
+        <LinearLayout
+            android:id="@+id/adsmultyViews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical" />
+
+    </FrameLayout>
+</LinearLayout>

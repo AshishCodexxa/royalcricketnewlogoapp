@@ -1,0 +1,114 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.LiveCricketScorePrediction" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="textBold" parent="@android:style/Widget.TextView">
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">@font/montserrat_extra_bold</item>
+    </style>
+    <style name="PredictionTitle" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorTextBlack</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+    </style>
+    <style name="TabTextAppearanceIpl" parent="@style/TextAppearance.Design.Tab">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="customTabLayoutIpl" parent="@style/Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/TabTextAppearanceIpl</item>
+    </style>
+    <style name="BottomNavigation" parent="@style/Theme.MaterialComponents.DayNight.Bridge">
+        <item name="colorAccent">@color/tabSelectedTextColor</item>
+        <item name="colorPrimary">@color/tabSelectedTextColor</item>
+        <item name="colorPrimaryDark">@color/tabSelectedTextColor</item>
+    </style>
+    <style name="TabTextAppearance" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="customTabLayout" parent="@style/Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/TabTextAppearance</item>
+    </style>
+    <style name="AppTheme.AdAttribution" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">left|center_horizontal|clip_horizontal</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:background">#ffcc66</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/ad_attribution</item>
+        <item name="android:height">20dp</item>
+        <item name="android:width">20dp</item>
+    </style>
+    <style name="TabScheduleText" parent="@style/TextAppearance.Design.Tab">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <style name="SplashTheme" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="android:navigationBarColor">@color/black</item>
+    </style>
+    <style name="RobotoTextViewStyle" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+    </style>
+    <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+    <style name="Theme.Fantasy" parent="@style/Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:textViewStyle">@style/RobotoTextViewStyle</item>
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+        <item name="android:statusBarColor">#9c010d</item>
+        <item name="colorPrimaryVariant">#9c010d</item>
+    </style>
+    <style name="Theme.BlueDark" parent="@style/Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:textViewStyle">@style/RobotoTextViewStyle</item>
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+        <item name="android:statusBarColor">@color/colorSecondary</item>
+        <item name="colorPrimaryVariant">@color/colorSecondary</item>
+    </style>
+    <style name="Theme.CricketApp" parent="@style/Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:textViewStyle">@style/RobotoTextViewStyle</item>
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+        <item name="android:statusBarColor">#9c010d</item>
+        <item name="colorPrimaryVariant">#9c010d</item>
+    </style>
+    <style name="customText">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/black</item>
+    </style>
+    <style name="customBackground">
+        <item name="android:background">@color/color_white_back</item>
+        <item name="android:backgroundTint">@color/color_white_back</item>
+        <item name="background">@color/color_white_back</item>
+        <item name="backgroundTint">@color/color_white_back</item>
+    </style>
+    <style name="customForeground">
+        <item name="android:tint">@color/black</item>
+        <item name="android:backgroundTint">@color/black</item>
+        <item name="tint">@color/black</item>
+    </style>
+</resources>
