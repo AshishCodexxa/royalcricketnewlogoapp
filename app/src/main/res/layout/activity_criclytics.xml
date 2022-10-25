@@ -195,6 +195,7 @@
                         android:orientation="vertical">
 
                         <ImageView
+                            android:id="@+id/clickWhatsApp"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             android:layout_gravity="center"

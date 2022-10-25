@@ -9,6 +9,7 @@ import android.util.DisplayMetrics;
 import android.view.Display;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import androidx.activity.result.ActivityResult;
@@ -54,6 +55,7 @@ public class CriclyticsActivity extends AppCompatActivity {
     String matchType;
     ProgressBar progressBar;
     Runnable refresh;
+    ImageView whats;
 
     ActivityResultLauncher<Intent> resultLauncher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), new ActivityResultCallback<ActivityResult>() {
 
@@ -126,9 +128,30 @@ public class CriclyticsActivity extends AppCompatActivity {
 
 
         this.fabs = findViewById(R.id.fab);
+        this.whats = findViewById(R.id.clickWhatsApp);
 
 
         fabs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                String url = "https://api.whatsapp.com/send?phone=918766694835";
+
+                try{
+                    PackageManager pm = getApplicationContext().getPackageManager();
+                    pm.getPackageInfo("com.whatsapp", PackageManager.GET_ACTIVITIES);
+                    Intent i = new Intent(Intent.ACTION_VIEW);
+                    i.setData(Uri.parse(url));
+                    startActivity(i);
+
+                } catch (PackageManager.NameNotFoundException e) {
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
+                }
+
+            }
+        });
+
+        whats.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
