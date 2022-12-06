@@ -1,6 +1,6 @@
 <resources>
 
-    <string name="app_name">Live Cricket Score Prediction</string>
+    <string name="app_name">Cricket Score &amp; Prediction</string>
     <string name="AdMob_AppId">ca-app-pub-3940256099942544~3347511713</string>
     <string name="AdMob_Banner">ca-app-pub-3940256099942544/6300978111</string>
     <string name="AdMob_Native">ca-app-pub-3940256099942544/2247696110</string>

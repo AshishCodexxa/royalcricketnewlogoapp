@@ -164,5 +164,5 @@
 }
 -keep @com.google.inject.Singleton public class *
 
--keepclassmembers class com.gsbusiness.livecricketscoreprediction.Models.** { <fields>; }
+-keepclassmembers class com.cricketscoreprediction.app.Models.** { <fields>; }
 

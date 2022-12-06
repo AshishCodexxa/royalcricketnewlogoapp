@@ -402,7 +402,7 @@
                         android:textSize="11sp" />
                 </RelativeLayout>
 
-                <com.gsbusiness.livecricketscoreprediction.CustomProgressBar
+                <com.cricketscoreprediction.app.CustomProgressBar
                     android:id="@+id/customProgressBar"
                     android:layout_width="match_parent"
                     android:layout_height="13dp"

@@ -109,7 +109,7 @@
                         android:textSize="11sp" />
                 </RelativeLayout>
 
-                <com.gsbusiness.livecricketscoreprediction.CustomProgressBar
+                <com.cricketscoreprediction.app.CustomProgressBar
                     android:id="@+id/seekBar0"
                     android:layout_width="match_parent"
                     android:layout_height="15dp"

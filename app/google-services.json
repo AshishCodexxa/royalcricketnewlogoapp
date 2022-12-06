@@ -1,33 +1,41 @@
 {
   "project_info": {
-    "project_number": "213276419622",
-    "project_id": "live-cricket-predictions",
-    "storage_bucket": "live-cricket-predictions.appspot.com"
+    "project_number": "172072253640",
+    "project_id": "livecricketscore-63605",
+    "storage_bucket": "livecricketscore-63605.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:213276419622:android:d161df2113fe379b9768e7",
+        "mobilesdk_app_id": "1:172072253640:android:68378ff831e6b94ecdcdfd",
         "android_client_info": {
-          "package_name": "com.gsbusiness.livecricketscoreprediction"
+          "package_name": "com.cricketscoreprediction.app"
         }
       },
       "oauth_client": [
         {
-          "client_id": "213276419622-aesl7eft64r1pab1onrss682pe15eu6t.apps.googleusercontent.com",
+          "client_id": "172072253640-6c2kjkj1iaa9gd0oiaibqtmtv2ie73v3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cricketscoreprediction.app",
+            "certificate_hash": "62bc7fefe6c60ac1ee214699f00e280c56c751bf"
+          }
+        },
+        {
+          "client_id": "172072253640-tqk9ftffp9cct1bg933lbdoueffof0ob.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCg5e38KEsfYQn2k8TuYgmvl6FDbsO5LoY"
+          "current_key": "AIzaSyBLrc48s4gxjTd-UZXshX_lJynxsAjOXAo"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "213276419622-aesl7eft64r1pab1onrss682pe15eu6t.apps.googleusercontent.com",
+              "client_id": "172072253640-tqk9ftffp9cct1bg933lbdoueffof0ob.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
