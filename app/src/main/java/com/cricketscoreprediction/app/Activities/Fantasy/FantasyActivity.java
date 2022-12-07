@@ -134,7 +134,7 @@ public class FantasyActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                String url = "https://wa.link/mahadevbookofficial";
+                String url = "https://wa.link/crickedprediction";
 
                 try{
                     PackageManager pm = getApplicationContext().getPackageManager();
@@ -154,7 +154,7 @@ public class FantasyActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                String url = "https://wa.link/mahadevbookofficial";
+                String url = "https://wa.link/crickedprediction";
 
 
 

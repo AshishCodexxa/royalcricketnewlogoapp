@@ -135,7 +135,7 @@ public class CriclyticsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                String url = "http://wa.link/reddyannaofficial";
+                String url = "https://wa.link/officialreddyanna";
 
 
                 try{
@@ -156,7 +156,7 @@ public class CriclyticsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                String url = "http://wa.link/reddyannaofficial";
+                String url = "https://wa.link/officialreddyanna";
 
                 try{
                     PackageManager pm = getApplicationContext().getPackageManager();
