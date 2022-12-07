@@ -48,7 +48,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:gravity="center"
-                        android:text="Fantasy"
+                        android:text="GET ID"
                         android:textAllCaps="true"
                         android:textColor="@color/textWhite"
                         android:textSize="15sp"
