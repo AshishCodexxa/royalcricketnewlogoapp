@@ -1,11 +1,20 @@
 <resources>
 
     <string name="app_name">Cricket Score &amp; Prediction</string>
-    <string name="AdMob_AppId">ca-app-pub-3940256099942544~3347511713</string>
+
+
+<!--    <string name="AdMob_AppId">ca-app-pub-3940256099942544~3347511713</string>
     <string name="AdMob_Banner">ca-app-pub-3940256099942544/6300978111</string>
     <string name="AdMob_Native">ca-app-pub-3940256099942544/2247696110</string>
     <string name="AdMob_Interstitial">ca-app-pub-3940256099942544/1033173712</string>
-    <string name="AdMob_OpenApp">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="AdMob_OpenApp">ca-app-pub-3940256099942544/3419835294</string>-->
+
+
+    <string name="AdMob_AppId">ca-app-pub-8231658554240002~7228033614</string>
+    <string name="AdMob_Banner">ca-app-pub-8231658554240002/2254036392</string>
+    <string name="AdMob_Native">ca-app-pub-8231658554240002/1396250299</string>
+    <string name="AdMob_Interstitial">ca-app-pub-8231658554240002/3395727673</string>
+    <string name="AdMob_OpenApp">ca-app-pub-8231658554240002/7770086954</string>
 
 
     <string name="_0">0</string>
