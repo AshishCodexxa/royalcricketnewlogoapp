@@ -29,7 +29,7 @@
             android:layout_marginStart="10dp"
             android:layout_toEndOf="@+id/img_back"
             android:gravity="center"
-            android:text="Fantasy"
+            android:text="Get Id"
             android:textAllCaps="true"
             android:textColor="@color/white"
             android:textSize="17sp"
@@ -164,7 +164,8 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:text="For Get ID Cricket Prediction Tip"
+                                android:text="To Get Sport Book ID "
+                                android:textAlignment="center"
                                 android:textSize="18sp"
                                 android:textStyle="bold" />
 
