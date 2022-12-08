@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:172072253640:android:68378ff831e6b94ecdcdfd",
         "android_client_info": {
-          "package_name": "com.cricketscoreprediction.app"
+          "package_name": "com.cricketlivescore.predictiontips"
         }
       },
       "oauth_client": [
@@ -17,7 +17,7 @@
           "client_id": "172072253640-6c2kjkj1iaa9gd0oiaibqtmtv2ie73v3.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.cricketscoreprediction.app",
+            "package_name": "com.cricketlivescore.predictiontips",
             "certificate_hash": "62bc7fefe6c60ac1ee214699f00e280c56c751bf"
           }
         },

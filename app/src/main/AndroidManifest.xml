@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.cricketscoreprediction.app">
+    package="com.cricketlivescore.predictiontips">
 
     <!--com.cricketlivescore.predictiontips-->
 
@@ -13,7 +13,7 @@
 
 
     <application
-        android:name="com.cricketscoreprediction.app.MyApplication"
+        android:name="com.cricketlivescore.predictiontips.MyApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -24,44 +24,44 @@
         android:theme="@style/Theme.CricketApp"
         tools:targetApi="31">
         <activity
-            android:name="com.cricketscoreprediction.app.Activities.Starts.ThirdActivity"
+            android:name="com.cricketlivescore.predictiontips.Activities.Starts.ThirdActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.cricketscoreprediction.app.Activities.News.NewsActivity"
+            android:name="com.cricketlivescore.predictiontips.Activities.News.NewsActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name="com.cricketscoreprediction.app.Activities.News.NewsDetailsActivity"
+            android:name="com.cricketlivescore.predictiontips.Activities.News.NewsDetailsActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name="com.cricketscoreprediction.app.Activities.Starts.SecondActivity"
+            android:name="com.cricketlivescore.predictiontips.Activities.Starts.SecondActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.cricketscoreprediction.app.Activities.Starts.FirstActivity"
+            android:name="com.cricketlivescore.predictiontips.Activities.Starts.FirstActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.cricketscoreprediction.app.Activities.More.TeamListActivity"
+            android:name="com.cricketlivescore.predictiontips.Activities.More.TeamListActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.BlueDark" />
         <activity
-            android:name="com.cricketscoreprediction.app.Activities.More.PlayerListActivity"
+            android:name="com.cricketlivescore.predictiontips.Activities.More.PlayerListActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.BlueDark" />
         <activity
-            android:name="com.cricketscoreprediction.app.Activities.More.SchedulesActivity"
+            android:name="com.cricketlivescore.predictiontips.Activities.More.SchedulesActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.BlueDark" />
         <activity
-            android:name="com.cricketscoreprediction.app.Activities.SplashActivity"
+            android:name="com.cricketlivescore.predictiontips.Activities.SplashActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/SplashTheme">
@@ -71,123 +71,123 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.cricketscoreprediction.app.Activities.Ipl.FieldingActivity"
+            android:name="com.cricketlivescore.predictiontips.Activities.Ipl.FieldingActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.BlueDark" />
         <activity
-            android:name="com.cricketscoreprediction.app.Activities.Ipl.BowlingActivity"
+            android:name="com.cricketlivescore.predictiontips.Activities.Ipl.BowlingActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.BlueDark" />
         <activity
-            android:name="com.cricketscoreprediction.app.Activities.Ipl.BattingActivity"
+            android:name="com.cricketlivescore.predictiontips.Activities.Ipl.BattingActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.BlueDark" />
         <activity
-            android:name="com.cricketscoreprediction.app.Activities.Ipl.FieldingStatsActivity"
+            android:name="com.cricketlivescore.predictiontips.Activities.Ipl.FieldingStatsActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.BlueDark" />
         <activity
-            android:name="com.cricketscoreprediction.app.Activities.Ipl.BowlingStatsActivity"
+            android:name="com.cricketlivescore.predictiontips.Activities.Ipl.BowlingStatsActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.BlueDark" />
         <activity
-            android:name="com.cricketscoreprediction.app.Activities.Ipl.BattingStatsActivity"
+            android:name="com.cricketlivescore.predictiontips.Activities.Ipl.BattingStatsActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.BlueDark" />
         <activity
-            android:name="com.cricketscoreprediction.app.Activities.Criclytics.CriclyticsActivity"
+            android:name="com.cricketlivescore.predictiontips.Activities.Criclytics.CriclyticsActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.BlueDark" />
         <activity
-            android:name="com.cricketscoreprediction.app.Activities.Ipl.IplActivity"
+            android:name="com.cricketlivescore.predictiontips.Activities.Ipl.IplActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.BlueDark" />
         <activity
-            android:name="com.cricketscoreprediction.app.Activities.Criclytics.CriclyticsCompleteActivity"
+            android:name="com.cricketlivescore.predictiontips.Activities.Criclytics.CriclyticsCompleteActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.BlueDark" />
         <activity
-            android:name="com.cricketscoreprediction.app.Activities.Criclytics.CriclyticsUCActivity"
+            android:name="com.cricketlivescore.predictiontips.Activities.Criclytics.CriclyticsUCActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.BlueDark" />
         <activity
-            android:name="com.cricketscoreprediction.app.Activities.Criclytics.ValuablePlayerActivity"
+            android:name="com.cricketlivescore.predictiontips.Activities.Criclytics.ValuablePlayerActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.BlueDark" />
         <activity
-            android:name="com.cricketscoreprediction.app.Activities.Fantasy.FantasyMatchActivity"
+            android:name="com.cricketlivescore.predictiontips.Activities.Fantasy.FantasyMatchActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Fantasy" />
         <activity
-            android:name="com.cricketscoreprediction.app.Activities.Fantasy.FantasyTeamActivity"
+            android:name="com.cricketlivescore.predictiontips.Activities.Fantasy.FantasyTeamActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Fantasy" />
         <activity
-            android:name="com.cricketscoreprediction.app.Activities.Fantasy.FantasyActivity"
+            android:name="com.cricketlivescore.predictiontips.Activities.Fantasy.FantasyActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Fantasy" />
         <activity
-            android:name="com.cricketscoreprediction.app.Activities.Criclytics.CriclyticsLiveActivity"
+            android:name="com.cricketlivescore.predictiontips.Activities.Criclytics.CriclyticsLiveActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.BlueDark" />
         <activity
-            android:name="com.cricketscoreprediction.app.Activities.Player.PlayerDetailActivity"
+            android:name="com.cricketlivescore.predictiontips.Activities.Player.PlayerDetailActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.BlueDark" />
         <activity
-            android:name="com.cricketscoreprediction.app.Activities.Stadium.StadiumDetailActivity"
+            android:name="com.cricketlivescore.predictiontips.Activities.Stadium.StadiumDetailActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name="com.cricketscoreprediction.app.Activities.PermissionActivity"
+            android:name="com.cricketlivescore.predictiontips.Activities.PermissionActivity"
             android:exported="true"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name="com.cricketscoreprediction.app.Activities.TestAdActivity"
+            android:name="com.cricketlivescore.predictiontips.Activities.TestAdActivity"
             android:exported="true"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.cricketscoreprediction.app.ExitActivity"
+            android:name="com.cricketlivescore.predictiontips.ExitActivity"
             android:exported="true"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.cricketscoreprediction.app.Activities.SplashImageActivity"
+            android:name="com.cricketlivescore.predictiontips.Activities.SplashImageActivity"
             android:exported="true"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.cricketscoreprediction.app.Activities.Match.MatchUpComingActivity"
+            android:name="com.cricketlivescore.predictiontips.Activities.Match.MatchUpComingActivity"
             android:exported="true"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.cricketscoreprediction.app.Activities.Match.MatchCompleteActivity"
+            android:name="com.cricketlivescore.predictiontips.Activities.Match.MatchCompleteActivity"
             android:exported="true"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.cricketscoreprediction.app.Activities.Match.MatchActivity"
+            android:name="com.cricketlivescore.predictiontips.Activities.Match.MatchActivity"
             android:exported="true"
             android:screenOrientation="portrait" />
 
 
         <activity
-            android:name="com.cricketscoreprediction.app.Activities.MainActivity"
+            android:name="com.cricketlivescore.predictiontips.Activities.MainActivity"
             android:exported="true"
             android:screenOrientation="portrait" />
 
